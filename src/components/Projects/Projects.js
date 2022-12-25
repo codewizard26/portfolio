@@ -71,7 +71,7 @@ function Projects() {
               imgPath={cart}
               isBlog={false}
               title="Ecom App"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              description="Ecommerse app made using Django, Django_rest framework for backend and Reactjs for frontend of the app. It has basic cart functionality along with braintree payment method integration"
               ghLink="https://github.com/codewizard26/Ecom-"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
