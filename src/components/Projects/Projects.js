@@ -9,6 +9,7 @@ import weather from '../../Assets/Projects/weather.png'
 import extension from "../../Assets/Projects/extension.jpg"
 import cart from "../../Assets/Projects/cart.jpg"
 import blog from "../../Assets/Projects/blog.png"
+import nft from "../../Assets/Projects/nft.jpg"
 
 function Projects() {
   return (
@@ -22,6 +23,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={nft}
+              isBlog={false}
+              title="NFT Gallery"
+              description="NFT Gallery dapp made using Next.js and Alchemy api that can be used to retrive all the owned NFTs of the wallet address and also show NFTs by the collection address"
+              ghLink="https://github.com/codewizard26/nft-gallery"
+              demoLink="https://nft-gallery-iota.vercel.app/"
+         
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={blog}
@@ -29,6 +41,7 @@ function Projects() {
               title="Cryptowiz NFT marketPlace"
               description="NFT marketplace made using Solidity for smart contract, ReactJs and Web3js for interacting with the smart contract on the frontend. Currently contract is deployed on Goerli testnet. truffle is used as a framework and unstoppable domains is used for authentication"
               ghLink="https://github.com/codewizard26/cryptowiz-nft-marketplace"
+              
          
             />
           </Col>
