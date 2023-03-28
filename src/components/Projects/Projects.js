@@ -31,6 +31,7 @@ function Projects() {
               title="Cryptowiz NFT marketPlace"
               description="NFT marketplace made using Solidity for smart contract, ReactJs and Web3js for interacting with the smart contract on the frontend. Currently contract is deployed on Sepolia testnet. truffle is used as a framework and unstoppable domains is used for authentication"
               ghLink="https://github.com/codewizard26/cryptowiz-nft-marketplace"
+              demoLink="https://icy-star-2141.on.fleek.co/"
               
          
             />
