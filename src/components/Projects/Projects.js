@@ -23,17 +23,7 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={nft}
-              isBlog={false}
-              title="NFT Gallery"
-              description="NFT Gallery dapp made using Next.js and Alchemy api that can be used to retrive all the owned NFTs of the wallet address and also show NFTs by the collection address"
-              ghLink="https://github.com/codewizard26/nft-gallery"
-              demoLink="https://nft-gallery-iota.vercel.app/"
-         
-            />
-          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={blog}
@@ -47,12 +37,12 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={blog}
+              imgPath={nft}
               isBlog={false}
               title="NFT Gallery"
-              description="NFT gallery made using Solidity for smart contract, Next.Js and Web3js and Alchemy NFT api is used to fetch nft metadata." 
+              description="NFT Gallery dapp made using Next.js and Alchemy api that can be used to retrive all the owned NFTs of the wallet address and also show NFTs by the collection address"
               ghLink="https://github.com/codewizard26/nft-gallery"
-              
+              demoLink="https://nft-gallery-iota.vercel.app/"
          
             />
           </Col>
