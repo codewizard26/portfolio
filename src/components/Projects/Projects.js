@@ -39,8 +39,19 @@ function Projects() {
               imgPath={blog}
               isBlog={false}
               title="Cryptowiz NFT marketPlace"
-              description="NFT marketplace made using Solidity for smart contract, ReactJs and Web3js for interacting with the smart contract on the frontend. Currently contract is deployed on Goerli testnet. truffle is used as a framework and unstoppable domains is used for authentication"
+              description="NFT marketplace made using Solidity for smart contract, ReactJs and Web3js for interacting with the smart contract on the frontend. Currently contract is deployed on Sepolia testnet. truffle is used as a framework and unstoppable domains is used for authentication"
               ghLink="https://github.com/codewizard26/cryptowiz-nft-marketplace"
+              
+         
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={blog}
+              isBlog={false}
+              title="NFT Gallery"
+              description="NFT gallery made using Solidity for smart contract, Next.Js and Web3js and Alchemy NFT api is used to fetch nft metadata." 
+              ghLink="https://github.com/codewizard26/nft-gallery"
               
          
             />
