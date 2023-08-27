@@ -6,6 +6,10 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import Login from "./components/auth/signin";
+import Signup from "./components/auth/register";
+import Testimonials from "./components/Home/Testimonial";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -16,6 +20,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { SiGnuprivacyguard } from "react-icons/si";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -23,7 +28,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
-    }, 1200);
+    }, 1400);
 
     return () => clearTimeout(timer);
   }, []);
@@ -40,6 +45,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/signin" element={<Login/>}/>
+          <Route path="/register" element={<Signup/>}/>
+          <Route path="/testimonial" element={<Testimonials/>}/>
+
+
         </Routes>
         <Footer />
       </div>

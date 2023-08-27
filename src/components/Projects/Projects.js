@@ -10,6 +10,8 @@ import extension from "../../Assets/Projects/extension.jpg"
 import cart from "../../Assets/Projects/cart.jpg"
 import blog from "../../Assets/Projects/blog.png"
 import nft from "../../Assets/Projects/nft.jpg"
+import lens from "../../Assets/Projects/lens.jpeg"
+import coffee from "../../Assets/Projects/coffee.jpeg"
 
 function Projects() {
   return (
@@ -24,14 +26,40 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={lens}
+              isBlog={false}
+              title="Social Media App using Lens Protocol"
+              description=" Developed a dynamic social media application on lens protocol using typescript, next.js lens-API, graphql, and react tanstack query that has the feature of posting content on lens social media and interacting with other users by following their posts and content."
+              ghLink="https://github.com/codewizard26/lens-social-media"
+              demoLink="https://my-e0cakoxyg-codewizard26.vercel.app/"
+              
+         
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={coffee}
+              isBlog={false}
+              title="Coffee Conosour project"
+              description="Developed a dynamic application utilizing the Google Maps API to enable users to pinpoint and evaluate nearby 
+              coffee stores, leveraging Next.js' SSR and incremental site regeneration to efficiently present the data. 
+              Implemented Airtable for seamless storage and management of coffee store information and ratings."
+              ghLink="https://github.com/codewizard26/coffee-store-nextapp"
+              
+              
+         
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={blog}
               isBlog={false}
               title="Cryptowiz NFT marketPlace"
               description="NFT marketplace made using Solidity for smart contract, ReactJs and Web3js for interacting with the smart contract on the frontend. Currently contract is deployed on Sepolia testnet. truffle is used as a framework and unstoppable domains is used for authentication"
-              ghLink="https://github.com/codewizard26/cryptowiz-nft-marketplace"
-              demoLink="https://icy-star-2141.on.fleek.co/"
+              ghLink="https://github.com/codewizard26/lens-social-media"
+              demoLink="https://my-app-eight-amber.vercel.app/"
               
          
             />
@@ -43,7 +71,6 @@ function Projects() {
               title="NFT Gallery"
               description="NFT Gallery dapp made using Next.js and Alchemy api that can be used to retrive all the owned NFTs of the wallet address and also show NFTs by the collection address"
               ghLink="https://github.com/codewizard26/nft-gallery"
-              demoLink="https://nft-gallery-iota.vercel.app/"
          
             />
           </Col>
