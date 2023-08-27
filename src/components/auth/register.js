@@ -41,17 +41,17 @@ return (
                 <Form.Group
                       className="mb-3"
                       controlId="formBasicPassword"
-                      onSubmit={submitForm}
+                      onSubmit={handleSubmit}
                     >
                       <Form.Label>Name</Form.Label>
-                      <Form.Control type="text" placeholder="Name" value = {user.name} onChange={handleInputChange}/>
+                      <Form.Control type="text" placeholder="Name"  onChange={handleChange}/>
                     </Form.Group>
                   <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label className="text-center">
                         Email address
                       </Form.Label>
-                      <Form.Control type="email" placeholder="Enter email" value = {user.email} onChange={handleChange} />
+                      <Form.Control type="email" placeholder="Enter email"  onChange={handleChange} />
                     </Form.Group>
 
                     <Form.Group
@@ -59,7 +59,7 @@ return (
                       controlId="formBasicPassword"
                     >
                       <Form.Label>Password</Form.Label>
-                      <Form.Control type="password" placeholder="Password" value = {user.password} onChange={handleChange} />
+                      <Form.Control type="password" placeholder="Password"  onChange={handleChange} />
                     </Form.Group>
                     
                     <div className="d-grid">
